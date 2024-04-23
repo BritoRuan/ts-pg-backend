@@ -18,4 +18,16 @@ export class Customer {
 
     return new Customer(name, documentInstance, id);
   }
+
+  public getId(): Uuid {
+    return this.id
+  }
+
+  public getName(): string {
+    return this.name
+  }
+
+  public getDocument(): Document {
+    return this.document
+  }
 }
